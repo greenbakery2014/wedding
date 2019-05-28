@@ -1,0 +1,130 @@
+@import '../mixins'
+*
+  // outline: 1px solid #000
+  font-size: 20px
+  letter-spacing: 2px
+  
+/*---------------------------------------------*/
+/*cookie*/
+/*---------------------------------------------*/
+$gutter: 10px
+$mainColor: #009d95
+
+.mainContent
+  line-height: 2
+  a
+    display: inline-block
+  h1
+    font-size: 40px
+  h2
+    font-size: 26px
+  h3
+    font-size: 20px
+  .wrap 
+    width: 100%
+    max-width: 1280px
+    margin: 0 auto
+    position: relative
+    +clearfix
+  .section
+    position: relative
+    z-index: 1
+    background-attachment: fixed
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    line-height: 2
+    & > .wrap
+      min-height: 100vh
+  .txtBox
+    +size(35%)
+    background: rgba(#fff, .8)
+    padding: $gutter*4
+    color: $mainColor
+    +valign
+  
+.navBox
+  +size(100%)
+  padding: $gutter*1.5 0
+  position: fixed
+  top: 0
+  z-index: 9
+  background: rgba(#fff,0.7)
+  +transition(all, .8s)
+  .logo
+    +size(20%)
+    margin: 0 auto
+    +transition(all, .8s)
+    img
+      +size(100%)
+  .nav
+    width: 28%
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    margin: 0 auto
+    +transition(all, .8s)
+    a
+      text-align: center
+      padding: $gutter $gutter*2
+      color: #333
+      font-size: 16px
+  &.fixed
+    +animation(show .8s)
+    .logo
+      +size(15%)
+      margin: 0
+      float: left
+    .nav
+      float: right
+      margin-top: $gutter
+
+
+
+
+#section-1
+  background-image: url('https://images.unsplash.com/photo-1485700281629-290c5a704409?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')
+  .txtBox
+    left: 0
+#section-2
+  background-image: url('https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80')
+  .txtBox
+    right: 0
+#section-3
+  .titleBox
+    padding: $gutter*4 $gutter
+    background: $mainColor
+    text-align: center
+  .catBox
+    padding: $gutter*4 $gutter
+    text-align: center
+  h2
+    margin: $gutter auto
+  h3
+    +size(70%)
+    margin: 0 auto
+  #tabs
+    +size(70%)
+    margin: $gutter*2 auto 0
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+    a
+      padding: $gutter $gutter*2
+      
+      
+#section-4
+
+
+
+
+
+
+
+
+
+
+
+// +breakpoint(iphone)
+// +breakpoint(tablet)
+// +breakpoint(desktop)

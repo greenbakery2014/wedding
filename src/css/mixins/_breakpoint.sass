@@ -1,0 +1,12 @@
+=breakpoint($size)
+  @if $size == iphone
+    @media (min-width: 375px) and (max-width: 667px)
+      @content
+
+  @else if $size == tablet
+    @media (min-width: 769px) and (max-width: 1024px)
+      @content
+
+  @else if $size == desktop
+    @media (min-width: 1025px)
+      @content

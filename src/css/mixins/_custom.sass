@@ -1,0 +1,29 @@
+=clearfix
+  &:after
+    content: ''
+    clear: both
+    display: block
+    
+=size($w, $h: auto)
+	width: $w
+	height: $h
+
+=flexCenter
+	display: flex
+	justify-content: center
+	align-items: center
+
+=radius($radius: 100%)
+	border-radius: $radius
+
+
+=valign
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+
++keyframes(show)
+  from
+    top: -5%
+  to
+    top: 0

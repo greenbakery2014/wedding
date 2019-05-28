@@ -1,0 +1,11 @@
+@import url(main.css);
+@import url(style/cookie.css);
+
+@keyframes show {
+  from {
+    top: -5%;
+  }
+  to {
+    top: 0;
+  }
+}
