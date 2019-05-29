@@ -38,6 +38,7 @@
 .mainContent .wrap {
   width: 100%;
   max-width: 1280px;
+  min-width: 1200px;
   margin: 0 auto;
   position: relative;
 }
@@ -82,14 +83,14 @@
   top: 0;
   z-index: 9;
   background: rgba(255, 255, 255, 0.7);
-  transition: all, 0.8s;
+  animation: show 0.2s;
 }
 
 .navBox .logo {
   width: 20%;
   height: auto;
   margin: 0 auto;
-  transition: all, 0.8s;
+  transition: all 0.2s linear;
 }
 
 .navBox .logo img {
@@ -106,7 +107,7 @@
   -ms-flex-align: center;
       align-items: center;
   margin: 0 auto;
-  transition: all, 0.8s;
+  transition: all 0.2s linear;
 }
 
 .navBox .nav a {
@@ -117,7 +118,7 @@
 }
 
 .navBox.fixed {
-  animation: show 0.8s;
+  animation: show 0.2s;
 }
 
 .navBox.fixed .logo {
@@ -149,9 +150,11 @@
 }
 
 #section-3 .titleBox {
-  padding: 40px 10px;
+  padding: 40px 0 100px;
   background: #009d95;
   text-align: center;
+  position: relative;
+  transition: all 0.2s linear;
 }
 
 #section-3 .catBox {
@@ -169,18 +172,40 @@
   margin: 0 auto;
 }
 
+#section-3 .contBox {
+  min-height: 100vh;
+}
+
+#section-3 #tabs-sticky-wrapper {
+  position: relative;
+  z-index: 9;
+}
+
 #section-3 #tabs {
-  width: 70%;
+  width: 100%;
   height: auto;
-  margin: 20px auto 0;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: space-evenly;
-      justify-content: space-evenly;
+  position: absolute;
+  bottom: 0;
+  z-index: 9;
+  margin: 0 auto;
+  background: #009d95;
+  text-align: center;
+  padding: 20px 0;
 }
 
 #section-3 #tabs a {
   padding: 10px 20px;
+  margin: 0 10px;
+  color: #fff;
+}
+
+#section-3 #tabs.fixed {
+  position: fixed;
+  left: 0;
+}
+
+#section-3 #contBox {
+  border: 1px solid #000;
+  position: relative;
+  z-index: 1;
 }
