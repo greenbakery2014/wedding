@@ -20,21 +20,22 @@ $(function() {
     
   $(function() {
     var scroll_area = $("#section-1").innerHeight() + $("#section-2").innerHeight();
-    var scrollNav = $("#nav.fixed").innerHeight();
-    var scroll_s3 = $("#section-3 .titleBox").height() - $("#nav.fixed").innerHeight();
+    var scroll_nav = $("#nav.fixed").innerHeight();
+    var scroll_tabs = $("#tabs").innerHeight();
+    var scroll_s3Title = $("#section-3 .titleBox").height() - scroll_nav;
+    var scroll_s4 = $("#section-4").innerHeight();
     var scroll = $(window).scrollTop();
-    if (scroll >= scroll_area + scroll_s3){
+    if (scroll >= scroll_area + scroll_s3Title){
       $("#tabs")
       .addClass("fixed")
-      .css({ "top": scrollNav, "bottom": "auto" });
+      .css({ "top": scroll_nav, "bottom": "auto" });
     } else {
       $("#tabs")
       .removeClass("fixed")
       .css({ "top": "", "bottom": "0", "margin": "" });
     };
-    if (scroll >= scroll_area + $("#section-3").innerHeight()) {
-      $("#tabs")
-      .removeClass("fixed")};
+    if (scroll >= scroll_area + scroll_s4 + scroll_nav + scroll_tabs) {
+      $("#tabs").removeClass("fixed")};
     }); 
   });
 
