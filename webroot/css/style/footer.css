@@ -1,0 +1,67 @@
+/*---------------------------------------------*/
+/*footer*/
+/*---------------------------------------------*/
+.footerBox {
+  background: #222;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.6;
+  padding: 60px;
+}
+
+.footerBox .wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: end;
+      align-items: flex-end;
+}
+
+.footerBox .wrap > div {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 6;
+      flex: 6;
+}
+
+.footerBox .mediaBox {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: end;
+      align-items: flex-end;
+}
+
+.footerBox .mediaBox .icons a {
+  width: 40px;
+  height: 40px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.footerBox .mediaBox .icons a + a {
+  margin-left: 10px;
+}
+
+.footerBox .mediaBox .icons a:nth-child(1) {
+  background-image: url("../../images/icon_fb.svg");
+}
+
+.footerBox .mediaBox .icons a:nth-child(2) {
+  background-image: url("../../images/icon_line.svg");
+}
+
+.footerBox .mediaBox .icons a:nth-child(3) {
+  background-image: url("../../images/icon_ig.svg");
+}
+
+.footerBox .mediaBox .icons a:nth-child(4) {
+  background-image: url("../../images/icon_tube.svg");
+}
+
+.footerBox .mediaBox .copyright {
+  opacity: 0.5;
+}

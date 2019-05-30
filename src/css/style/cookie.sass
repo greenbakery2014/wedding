@@ -1,17 +1,13 @@
 @import '../mixins'
 *
   // outline: 1px solid #000
-  font-size: 20px
-  letter-spacing: 2px
-  
 /*---------------------------------------------*/
 /*cookie*/
 /*---------------------------------------------*/
-$gutter: 10px
-$mainColor: #009d95
-
 .mainContent
   line-height: 2
+  font-size: 20px
+  letter-spacing: 2px
   a
     display: inline-block
   h1
@@ -40,48 +36,15 @@ $mainColor: #009d95
   .txtBox
     +size(35%)
     background: rgba(#fff, .8)
-    padding: $gutter*4
+    padding: $gutter * 4
     color: $mainColor
     +valign
+  .btn
+    display: inline-block
+    padding: $gutter * 1 $gutter * 6
+    background: $mainColor
+    color: #fff
   
-.navBox
-  +size(100%)
-  padding: $gutter*1.5 0
-  position: fixed
-  top: 0
-  z-index: 9
-  background: rgba(#fff,0.7)
-  +animation(show .2s)
-  .logo
-    +size(20%)
-    margin: 0 auto
-    +transition(all, .2s)
-    img
-      +size(100%)
-  .nav
-    width: 28%
-    display: flex
-    justify-content: space-evenly
-    align-items: center
-    margin: 0 auto
-    +transition(all, .2s)
-    a
-      text-align: center
-      padding: $gutter $gutter*2
-      color: #333
-      font-size: 16px
-  &.fixed
-    +animation(show .2s)
-    .logo
-      +size(15%)
-      margin: 0
-      float: left
-    .nav
-      float: right
-      margin-top: $gutter
-
-
-
 
 #section-1
   background-image: url('https://images.unsplash.com/photo-1485700281629-290c5a704409?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')
@@ -92,25 +55,25 @@ $mainColor: #009d95
   .txtBox
     right: 0
 #section-3
+  padding-bottom: $gutter * 10
   .titleBox
-    padding: $gutter*4 0 $gutter*10
+    padding: $gutter * 4 0 $gutter * 10
     background: $mainColor
     text-align: center
     position: relative
     +transition(all, .2s)
   .catBox
-    padding: $gutter*4 $gutter
+    padding: $gutter * 4 0
     text-align: center
   h2
-    margin: $gutter auto
+    margin: 0 auto
   h3
-    +size(70%)
     margin: 0 auto
   .contBox
-    min-height: 100vh
-  #tabs-sticky-wrapper
-    position: relative
-    z-index: 9
+    display: none
+    padding: 0 $gutter * 4
+    &:first-child
+      display: block
   #tabs
     +size(100%)
     position: absolute
@@ -119,28 +82,70 @@ $mainColor: #009d95
     margin: 0 auto
     background: $mainColor
     text-align: center
-    padding: $gutter*2 0
-    // +transition(all, .2s)
+    padding: $gutter * 2 0
     a
-      padding: $gutter $gutter*2
+      padding: $gutter $gutter * 2
       margin: 0 $gutter
       color: #fff
     &.fixed
       position: fixed
       left: 0
-  #contBox
-    border: 1px solid #000
-    position: relative
-    z-index: 1
-      
+
+.cookieWrap
+  display: flex
+  & > div
+    padding: $gutter * 4
+    img
+      +size(100%)
+  &:nth-child(2n+1)
+    flex-direction: row-reverse
+  .cookie_txt
+    flex: 4
+    display: flex
+    flex-flow: column
+    justify-content: flex-end
+    ._title
+      font-size: 26px
+    ._desc
+      letter-spacing: 0
+  .cookie_img
+    flex: 6
+    display: flex
+    flex-flow: column
+    justify-content: flex-end
+
 #section-4
+  .wrap
+    min-height: 0
+    display: flex
+    align-items: center
+    min-height: 50vh
+  .bgBox
+    min-height: 30vh
+    position: relative
+    background-attachment: fixed
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    background-image: url('https://images.unsplash.com/photo-1485700281629-290c5a704409?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')
+    img
+      +size(15%)
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+  .reservation
+    text-align: center
+    +size(100%)
+    h2
+      font-size: 30px
+    p
+      +size(50%)
+      margin: $gutter auto $gutter * 3
+      // display: block
+      // text-align: left
 
-
-
-
-
-
-
+	    
 
 
 

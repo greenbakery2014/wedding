@@ -1,0 +1,40 @@
+@import '../mixins'
+/*---------------------------------------------*/
+/*nav*/
+/*---------------------------------------------*/
+.navBox
+  +size(100%)
+  padding: $gutter * 1.5 0
+  position: fixed
+  top: 0
+  z-index: 9
+  background: rgba(#fff,0.9)
+  +animation(show .2s)
+  .logo
+    +size(20%)
+    margin: 0 auto
+    +transition(all, .2s)
+    img
+      +size(100%)
+  .nav
+    width: 28%
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    margin: 0 auto
+    +transition(all, .2s)
+    a
+      text-align: center
+      padding: $gutter $gutter * 2
+      color: #333
+      font-size: 16px
+  &.fixed
+    +animation(show .2s)
+    .logo
+      +size(15%)
+      margin: 0
+      float: left
+    .nav
+      float: right
+      margin-top: $gutter
+

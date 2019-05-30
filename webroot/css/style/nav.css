@@ -1,0 +1,60 @@
+/*---------------------------------------------*/
+/*nav*/
+/*---------------------------------------------*/
+.navBox {
+  width: 100%;
+  height: auto;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  background: rgba(255, 255, 255, 0.9);
+  animation: show 0.2s;
+}
+
+.navBox .logo {
+  width: 20%;
+  height: auto;
+  margin: 0 auto;
+  transition: all 0.2s linear;
+}
+
+.navBox .logo img {
+  width: 100%;
+  height: auto;
+}
+
+.navBox .nav {
+  width: 28%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 0 auto;
+  transition: all 0.2s linear;
+}
+
+.navBox .nav a {
+  text-align: center;
+  padding: 10px 20px;
+  color: #333;
+  font-size: 16px;
+}
+
+.navBox.fixed {
+  animation: show 0.2s;
+}
+
+.navBox.fixed .logo {
+  width: 15%;
+  height: auto;
+  margin: 0;
+  float: left;
+}
+
+.navBox.fixed .nav {
+  float: right;
+  margin-top: 10px;
+}

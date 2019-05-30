@@ -1,11 +1,2 @@
 @import url(main/base.css);
 @import url(main/hack.css);
-
-@keyframes show {
-  from {
-    top: -5%;
-  }
-  to {
-    top: 0;
-  }
-}
