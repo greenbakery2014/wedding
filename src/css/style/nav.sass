@@ -8,7 +8,7 @@
   position: fixed
   top: 0
   z-index: 9
-  background: rgba(#fff,0.9)
+  background: rgba(#fff,1)
   +animation(show .2s)
   .logo
     +size(20%)
@@ -28,11 +28,14 @@
       padding: $gutter $gutter * 2
       color: #333
       font-size: 16px
+      position: relative
+      +transition(all, .1s)
+      &:hover, &.on
+        color: $mainColor
   &.fixed
-    +animation(show .2s)
     .logo
       +size(15%)
-      margin: 0
+      margin: 0 0 0 $gutter
       float: left
     .nav
       float: right

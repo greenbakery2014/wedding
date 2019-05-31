@@ -8,7 +8,7 @@
   position: fixed;
   top: 0;
   z-index: 9;
-  background: rgba(255, 255, 255, 0.9);
+  background: white;
   animation: show 0.2s;
 }
 
@@ -41,16 +41,18 @@
   padding: 10px 20px;
   color: #333;
   font-size: 16px;
+  position: relative;
+  transition: all 0.1s linear;
 }
 
-.navBox.fixed {
-  animation: show 0.2s;
+.navBox .nav a:hover, .navBox .nav a.on {
+  color: #009d95;
 }
 
 .navBox.fixed .logo {
   width: 15%;
   height: auto;
-  margin: 0;
+  margin: 0 0 0 10px;
   float: left;
 }
 
