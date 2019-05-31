@@ -263,6 +263,7 @@
   -ms-flex-pack: end;
       justify-content: flex-end;
   text-align: center;
+  margin: 0 auto;
 }
 
 #section-4 .wrap {
