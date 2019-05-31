@@ -137,30 +137,12 @@
   background: rgba(0, 157, 149, 0.95);
 }
 
-#section-3 .catBox {
-  padding: 40px 0;
-  text-align: center;
-}
-
 #section-3 h1 {
   color: #fff;
 }
 
-#section-3 h2 {
+#section-3 h2, #section-3 h3 {
   margin: 0 auto;
-}
-
-#section-3 h3 {
-  margin: 0 auto;
-}
-
-#section-3 .contBox {
-  display: none;
-  padding: 0 100px;
-}
-
-#section-3 .contBox:first-child {
-  display: block;
 }
 
 #section-3 #tabs {
@@ -216,6 +198,20 @@
   background: #009d95;
 }
 
+#contBox .contBox {
+  padding: 0 10px;
+}
+
+#contBox .contBox .catBox {
+  padding: 40px 0;
+  text-align: center;
+}
+
+#contBox .contBox .catBox h2 {
+  color: #009d95;
+  font-size: 30px;
+}
+
 .cookieWrap {
   display: -ms-flexbox;
   display: flex;
@@ -228,6 +224,7 @@
 .cookieWrap > div img {
   width: 100%;
   height: auto;
+  max-width: 600px;
 }
 
 .cookieWrap:nth-child(2n+1) {
@@ -236,18 +233,19 @@
 }
 
 .cookieWrap .cookie_txt {
-  -ms-flex: 5;
-      flex: 5;
+  -ms-flex: 4;
+      flex: 4;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: column;
       flex-flow: column;
+  padding: 0 50px;
   -ms-flex-pack: center;
       justify-content: center;
 }
 
 .cookieWrap .cookie_txt ._title {
-  font-size: 26px;
+  font-size: 22px;
   color: #009d95;
 }
 
@@ -256,14 +254,15 @@
 }
 
 .cookieWrap .cookie_img {
-  -ms-flex: 5;
-      flex: 5;
+  -ms-flex: 6;
+      flex: 6;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: column;
       flex-flow: column;
   -ms-flex-pack: end;
       justify-content: flex-end;
+  text-align: center;
 }
 
 #section-4 .wrap {

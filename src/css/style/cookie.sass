@@ -91,20 +91,10 @@
       left: 0
       +size(100%,100%)
       background: rgba($mainColor,.95)
-  .catBox
-    padding: $gutter * 4 0
-    text-align: center
   h1
     color: #fff
-  h2
+  h2, h3
     margin: 0 auto
-  h3
-    margin: 0 auto
-  .contBox
-    display: none
-    padding: 0 $gutter * 10
-    &:first-child
-      display: block
   #tabs
     +size(100%)
     position: absolute
@@ -140,30 +130,41 @@
       left: 0
       background: rgba($mainColor,1)
 
+#contBox .contBox
+  padding: 0 $gutter * 1
+  .catBox
+    padding: $gutter * 4 0
+    text-align: center
+    h2
+      color: $mainColor
+      font-size: 30px
 .cookieWrap
   display: flex
   & > div
     padding: $gutter * 4 0
     img
       +size(100%)
+      max-width: 600px
   &:nth-child(2n+1)
     flex-direction: row-reverse
   .cookie_txt
-    flex: 5
+    flex: 4
     display: flex
     flex-flow: column
+    padding: 0 $gutter * 5
     // justify-content: flex-end
     justify-content: center
     ._title
-      font-size: 26px
+      font-size: 22px
       color: $mainColor
     ._desc
       letter-spacing: 0
   .cookie_img
-    flex: 5
+    flex: 6
     display: flex
     flex-flow: column
     justify-content: flex-end
+    text-align: center
 
 #section-4
   .wrap
