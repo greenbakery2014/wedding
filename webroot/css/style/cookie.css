@@ -262,7 +262,9 @@
       flex-flow: column;
   -ms-flex-pack: end;
       justify-content: flex-end;
-  text-align: center;
+}
+
+.cookieWrap .cookie_img img {
   margin: 0 auto;
 }
 
