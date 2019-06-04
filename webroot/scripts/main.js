@@ -14,7 +14,7 @@ $(function () {
     handleTabsFixed: function () {
       var scroll = $(window).scrollTop();
       var scroll_area = $("#section-1").innerHeight() + $("#section-2").innerHeight();
-      var scroll_nav = $("#nav.fixed").innerHeight();
+      var scroll_nav = $("#nav").innerHeight();
       var scroll_tabs = $("#tabs").innerHeight();
       var scroll_s3Title = $("#section-3 .titleBox").height() - scroll_nav;
       var scroll_s4Top = $("#section-4").offset().top;
@@ -29,6 +29,7 @@ $(function () {
         $("#tabs")
           .removeClass("fixed")
           .css({ "top": "", "bottom": "0", "margin": "" });
+        $("#section-3 .titleBox").css({"padding-bottom": scroll_tabs});
       };
   
       // situation name 2
@@ -79,7 +80,7 @@ $(function () {
       // $($(this).attr('href')).fadeIn(300);
 
       // var tabTarget = $(this.getAttribute('href'));
-      // var anchorSpace = $("#nav.fixed").innerHeight() + $("#tabs").innerHeight();
+      // var anchorSpace = $("#nav").innerHeight() + $("#tabs").innerHeight();
       // if (tabTarget.length) {
       //   $('html, body').stop().animate({
       //     scrollTop: $("#contBox").offset().top - anchorSpace
@@ -88,7 +89,7 @@ $(function () {
       // }
     },
     handleTabScroll: function (event) {
-      var anchorSpace = $("#nav.fixed").innerHeight() + $("#tabs").innerHeight();
+      var anchorSpace = $("#nav").innerHeight() + $("#tabs").innerHeight();
       //smoothscroll
       $('#tabs a').on('click', function () {
         var target = this.hash;
@@ -117,7 +118,7 @@ $(function () {
 
   var init = function () {
     $(window).on('scroll', function () {
-      methods.handleNavFixed()
+      // methods.handleNavFixed()
       methods.handleTabsFixed()
       methods.handleTabScroll()
     });

@@ -9,6 +9,10 @@
   padding: 60px;
 }
 
+.footerBox a {
+  color: #fff;
+}
+
 .footerBox .wrap {
   display: -ms-flexbox;
   display: flex;
@@ -18,16 +22,11 @@
       align-items: flex-end;
 }
 
-.footerBox .wrap > div {
+.footerBox .mediaBox {
   display: -ms-flexbox;
   display: flex;
   -ms-flex: 6;
       flex: 6;
-}
-
-.footerBox .mediaBox {
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-align: end;
