@@ -1,0 +1,39 @@
+@import '../mixins'
+*
+  // outline: 1px solid #000
+/*---------------------------------------------*/
+/*responsive tablet*/
+/*---------------------------------------------*/
++breakpoint(tablet-vrt)
+  // main box
+  .mainContent
+    line-height: 1.6
+    font-size: 16px
+    letter-spacing: 0
+    overflow: hidden
+    .wrap 
+      +size(100%)
+      min-width: 0
+      max-width: none
+    .section
+      background-attachment: initial
+      background-size: cover
+    h1
+      font-size: 30px
+    h2
+      font-size: 24px
+    h3
+      font-size: 16px
+    .txtBox
+      +size(90%)
+  #contBox .contBox
+    width: 95%
+    // background: rgba(#000,.2)
+  .cookieWrap
+    & > div
+      padding: $gutter 0
+    .cookie_txt
+      flex: 5.8
+      padding: 0 $gutter * 5
+    .cookie_img
+      flex: 4.2

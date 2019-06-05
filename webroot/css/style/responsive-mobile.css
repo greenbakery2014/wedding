@@ -1,0 +1,318 @@
+/*---------------------------------------------*/
+/*responsive mobile*/
+/*---------------------------------------------*/
+@media (min-width: 320px) and (max-width: 767px) {
+  .mainContent {
+    line-height: 1.6;
+    font-size: 16px;
+    letter-spacing: 0;
+    overflow: hidden;
+  }
+  .mainContent .wrap {
+    width: 100%;
+    height: auto;
+    min-width: 0;
+  }
+  .mainContent .section, .mainContent #section-4 .bgBox {
+    background-attachment: initial;
+    background-size: cover;
+  }
+  .mainContent h1 {
+    font-size: 30px;
+  }
+  .mainContent h2 {
+    font-size: 20px;
+  }
+  .mainContent h3 {
+    font-size: 16px;
+  }
+  .mainContent .txtBox {
+    width: 90%;
+    height: auto;
+    line-height: 2;
+  }
+  .navBox, .navBox.fixed {
+    padding: 0;
+  }
+  .navBox .wrap, .navBox.fixed .wrap {
+    width: calc(100% - (2% * 2));
+    padding: 2%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .navBox .wrap:after, .navBox.fixed .wrap:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+  .navBox .logo, .navBox.fixed .logo {
+    width: auto;
+    height: auto;
+    margin: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 3;
+        flex: 3;
+  }
+  .navBox .nav, .navBox.fixed .nav {
+    width: auto;
+    padding: 0;
+    margin-top: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 6;
+        flex: 6;
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+  }
+  .navBox .nav a, .navBox.fixed .nav a {
+    padding: 0;
+    font-size: 15px;
+  }
+  .navBox .nav a + a, .navBox.fixed .nav a + a {
+    margin-left: 0;
+  }
+  .footerBox {
+    line-height: 2;
+    font-size: #fff;
+    padding: 60px 10px;
+  }
+  .footerBox a {
+    font-size: #fff;
+  }
+  .footerBox .wrap {
+    display: block;
+    text-align: center;
+  }
+  .footerBox .wrap > div {
+    display: block;
+  }
+  .footerBox .mediaBox {
+    display: block;
+    margin-top: 20px;
+  }
+  .footerBox .mediaBox .icons a {
+    width: 40px;
+    height: 40px;
+  }
+  .footerBox .mediaBox .icons a + a {
+    margin-left: 20px;
+  }
+  .footerBox .mediaBox .copyright {
+    font-size: 13px;
+  }
+  #section-1:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+  #section-1 .txtBox {
+    margin-top: 100px;
+  }
+  #section-2:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+  }
+  #section-2 .txtBox {
+    padding: 0 40px;
+  }
+  #section-4 .bgBox img {
+    width: 40%;
+    height: auto;
+  }
+  #tabs {
+    padding: 0;
+  }
+  #tabs a {
+    width: 25%;
+    margin: 0;
+    line-height: 1.3;
+    padding: 10px;
+  }
+  #tabs a:after {
+    display: none;
+  }
+  #contBox .contBox {
+    padding-bottom: 50px;
+  }
+  #contBox .contBox + .contBox {
+    border-top: 1px solid #ccc;
+  }
+  #contBox .contBox .catBox {
+    padding: 20px 0;
+    margin-bottom: 60px;
+  }
+  #contBox .contBox .catBox:after {
+    width: 100%;
+    height: 30px;
+    bottom: -30px;
+  }
+  #contBox .contBox .catBox h3 span {
+    display: inline;
+  }
+  .cookieWrap {
+    -ms-flex-flow: column;
+        flex-flow: column;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    padding: 0 20px;
+  }
+  .cookieWrap + .cookieWrap {
+    margin-top: 40px;
+  }
+  .cookieWrap:nth-child(2n+1) {
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+  }
+  .cookieWrap .cookie_txt {
+    -ms-flex: 12;
+        flex: 12;
+    padding: 0;
+    text-align: center;
+  }
+  .cookieWrap .cookie_img {
+    -ms-flex: 12;
+        flex: 12;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 415px) and (max-width: 667px) {
+  .mainContent .wrap {
+    width: 80%;
+    height: auto;
+  }
+  .mainContent .section, .mainContent #section-4 .bgBox {
+    background-attachment: initial;
+    background-size: cover;
+  }
+  .mainContent h1 {
+    font-size: 30px;
+  }
+  .mainContent h2 {
+    font-size: 20px;
+  }
+  .mainContent h3 {
+    font-size: 16px;
+  }
+  .mainContent .txtBox {
+    width: 90%;
+    height: auto;
+  }
+  .navBox .wrap, .navBox.fixed .wrap {
+    width: 80%;
+    padding: 0.5% 0;
+  }
+  .navBox .logo, .navBox.fixed .logo {
+    -ms-flex: 2;
+        flex: 2;
+  }
+  .navBox .nav, .navBox.fixed .nav {
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+  }
+  .navBox .nav a + a, .navBox.fixed .nav a + a {
+    margin-left: 10px;
+  }
+  .footerBox .infoBox {
+    -khtml-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  #section-1 .txtBox {
+    margin-top: 0;
+    top: 25%;
+    margin: auto;
+    -khtml-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+  #section-2 .txtBox {
+    margin-top: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    -khtml-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+  #section-3 h3 {
+    width: 100%;
+    -khtml-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    transform: scale(0.85);
+  }
+  #tabs a {
+    padding: 10px;
+  }
+  #tabs a:after {
+    display: block;
+    width: 15px;
+    height: 15px;
+    left: 0;
+  }
+  .cookieWrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-flow: row;
+        flex-flow: row;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    padding: 0;
+  }
+  .cookieWrap:nth-child(2n+1) {
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+  }
+  .cookieWrap .cookie_txt {
+    -ms-flex: 6;
+        flex: 6;
+    padding: 0;
+    text-align: left;
+  }
+  .cookieWrap .cookie_img {
+    -ms-flex: 6;
+        flex: 6;
+  }
+  .cookieWrap .cookie_img img {
+    margin: 0 auto;
+    width: 100%;
+  }
+  #section-4 .bgBox {
+    min-height: 200px;
+  }
+  #section-4 .bgBox img {
+    width: 20%;
+    height: auto;
+  }
+  #section-4 .reservation p {
+    width: 100%;
+    height: auto;
+    -khtml-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    line-height: 2;
+    margin: 10px auto;
+  }
+}

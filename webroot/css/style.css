@@ -2,4 +2,5 @@
 @import url(style/nav.css);
 @import url(style/cookie.css);
 @import url(style/footer.css);
-@import url(style/responsive.css);
+@import url(style/responsive-mobile.css);
+@import url(style/responsive-tablet.css);

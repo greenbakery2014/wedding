@@ -1,0 +1,206 @@
+@import '../mixins'
+*
+  // outline: 1px solid #000
+/*---------------------------------------------*/
+/*responsive mobile*/
+/*---------------------------------------------*/
++breakpoint(iphone)
+  // main box
+  .mainContent
+    line-height: 1.6
+    font-size: 16px
+    letter-spacing: 0
+    overflow: hidden
+    .wrap 
+      +size(100%)
+      min-width: 0
+    .section, #section-4 .bgBox
+      background-attachment: initial
+      background-size: cover
+    h1
+      font-size: 30px
+    h2
+      font-size: 20px
+    h3
+      font-size: 16px
+    .txtBox
+      +size(90%)
+      line-height: 2
+  // nav box
+  .navBox , .navBox.fixed
+    padding: 0
+    .wrap
+      width: calc(100% - (2% * 2))
+      padding: 2%
+      display: flex
+      justify-content: center
+      align-items: center
+      +clearfix
+    .logo
+      +size(auto)
+      margin: 0
+      display: flex
+      flex: 3
+    .nav
+      width: auto
+      padding: 0
+      margin-top: 0
+      display: flex
+      flex: 6
+      justify-content: space-evenly
+      a
+        padding: 0
+        font-size: 15px
+        & + a
+          margin-left: 0
+  // footer box
+  .footerBox
+    line-height: 2
+    font-size: #fff
+    padding: $gutter * 6 $gutter * 1
+    a
+      font-size: #fff
+    .wrap
+      display: block
+      text-align: center
+      & > div
+        display: block
+    .mediaBox
+      display: block
+      margin-top: $gutter * 2
+      .icons a
+        +size(40px, 40px)
+        & + a
+          margin-left: $gutter * 2
+      .copyright
+        font-size: 13px
+  // cookies box
+  #section-1
+    +beforeCover(0.2)
+    .txtBox
+      margin-top: $gutter * 10
+  #section-2
+    +beforeCover(0.4)
+    .txtBox
+      padding: 0 $gutter * 4
+  #section-4
+    .bgBox img
+      +size(40%)
+  #tabs
+    padding: 0
+    a
+      width: 25%
+      margin: 0
+      line-height: 1.3
+      padding: $gutter
+      &:after
+        display: none
+  #contBox .contBox
+    padding-bottom: $gutter * 5
+    & + .contBox
+      border-top: 1px solid #ccc
+    .catBox
+      padding: $gutter * 2 0
+      margin-bottom: $gutter * 6
+      &:after
+        +size(100%,30px)
+        bottom: -30px
+      h3 span
+        display: inline
+  .cookieWrap
+    flex-flow: column
+    flex-direction: column-reverse
+    padding: 0 $gutter * 2
+    & + .cookieWrap
+      margin-top: $gutter * 4
+    &:nth-child(2n+1)
+      flex-direction: column-reverse
+    .cookie_txt
+      flex: 12
+      padding: 0
+      text-align: center
+    .cookie_img
+      flex: 12
+      +size(70%)
+      margin: 0 auto
+
+
++breakpoint(iphone-hrz)
+  // main box
+  .mainContent
+    .wrap 
+      +size(80%)
+    .section, #section-4 .bgBox
+      background-attachment: initial
+      background-size: cover
+    h1
+      font-size: 30px
+    h2
+      font-size: 20px
+    h3
+      font-size: 16px
+    .txtBox
+      +size(90%)
+  // nav box
+  .navBox , .navBox.fixed
+    .wrap
+      width: 80%
+      padding: 0.5% 0
+    .logo
+      flex: 2
+    .nav
+      justify-content: flex-end
+      a
+        & + a
+          margin-left: $gutter
+  // footer box
+  .footerBox .infoBox
+    +scale(0.8)
+  // cookies box
+  #section-1 .txtBox
+    margin-top: 0
+    top: 25%
+    margin: auto
+    +scale(0.7)
+  #section-2 .txtBox
+    margin-top: 0
+    top: 0
+    bottom: 0
+    margin: auto
+    +scale(0.7)
+  #section-3 h3
+    width: 100%
+    +scale(0.85)
+  #tabs a
+    padding: $gutter
+    &:after
+      display: block
+      +size(15px,15px)
+      left: 0
+  .cookieWrap
+    display: flex
+    justify-content: center
+    flex-flow: row
+    flex-direction: row
+    padding: 0
+    &:nth-child(2n+1)
+      flex-direction: row-reverse
+    .cookie_txt
+      flex: 6
+      padding: 0
+      text-align: left
+    .cookie_img
+      flex: 6
+      img
+        margin: 0 auto
+        width: 100%
+  #section-4
+    .bgBox
+      min-height: 200px
+      img
+        +size(20%)
+    .reservation p
+      +size(100%)
+      +scale(0.8)
+      line-height: 2
+      margin: $gutter auto

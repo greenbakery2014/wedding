@@ -1,0 +1,49 @@
+/*---------------------------------------------*/
+/*responsive tablet*/
+/*---------------------------------------------*/
+@media (min-width: 668px) and (max-width: 768px) {
+  .mainContent {
+    line-height: 1.6;
+    font-size: 16px;
+    letter-spacing: 0;
+    overflow: hidden;
+  }
+  .mainContent .wrap {
+    width: 100%;
+    height: auto;
+    min-width: 0;
+    max-width: none;
+  }
+  .mainContent .section {
+    background-attachment: initial;
+    background-size: cover;
+  }
+  .mainContent h1 {
+    font-size: 30px;
+  }
+  .mainContent h2 {
+    font-size: 24px;
+  }
+  .mainContent h3 {
+    font-size: 16px;
+  }
+  .mainContent .txtBox {
+    width: 90%;
+    height: auto;
+  }
+  #contBox .contBox {
+    width: 95%;
+  }
+  .cookieWrap > div {
+    padding: 10px 0;
+  }
+  .cookieWrap .cookie_txt {
+    -ms-flex: 5.8;
+        flex: 5.8;
+    padding: 0 50px;
+  }
+  .cookieWrap .cookie_img {
+    -ms-flex: 4.2;
+        flex: 4.2;
+  }
+}
