@@ -24,7 +24,7 @@
 
 .mainContent .wrap {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
 }
@@ -49,9 +49,6 @@
 }
 
 .mainContent .txtBox {
-  width: 35%;
-  height: auto;
-  padding: 0 40px;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -75,7 +72,7 @@
 }
 
 #section-1 .txtBox {
-  left: 0;
+  left: 5%;
   color: #fff;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
@@ -105,7 +102,7 @@
 }
 
 #section-2 .txtBox {
-  right: 0;
+  right: 5%;
   color: #fff;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
@@ -135,12 +132,12 @@
   background: rgba(0, 157, 149, 0.95);
 }
 
-#section-3 h2, #section-3 h3 {
+#section-3 .titleBox h2, #section-3 .titleBox h3 {
   margin: 0 auto;
-  width: 85%;
+  width: 90%;
 }
 
-#section-3 h3 {
+#section-3 .titleBox h3 {
   padding-bottom: 10px;
 }
 
@@ -199,6 +196,11 @@
 
 #contBox .contBox {
   margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+#contBox .contBox + .contBox {
+  border-top: 1px solid #ccc;
 }
 
 #contBox .contBox .catBox {
@@ -234,12 +236,13 @@
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  margin: 0 auto;
 }
 
 .cookieWrap > div img {
   width: 100%;
   height: auto;
-  max-width: 600px;
+  max-width: 400px;
 }
 
 .cookieWrap:nth-child(2n+1) {
@@ -248,8 +251,8 @@
 }
 
 .cookieWrap .cookie_txt {
-  -ms-flex: 500px;
-      flex: 500px;
+  -ms-flex: 600px;
+      flex: 600px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -ms-flex-positive: 0;
@@ -258,7 +261,6 @@
   display: flex;
   -ms-flex-flow: column;
       flex-flow: column;
-  padding: 0 100px;
   -ms-flex-pack: center;
       justify-content: center;
 }
@@ -269,8 +271,8 @@
 }
 
 .cookieWrap .cookie_img {
-  -ms-flex: 370px;
-      flex: 370px;
+  -ms-flex: 420px;
+      flex: 420px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -ms-flex-positive: 0;
@@ -341,7 +343,5 @@
 }
 
 #section-4 .reservation p {
-  width: 80%;
-  height: auto;
   margin: 10px auto 30px;
 }

@@ -27,8 +27,6 @@
     font-size: 16px;
   }
   .mainContent .txtBox {
-    width: 90%;
-    height: auto;
     line-height: 2;
   }
   .navBox, .navBox.fixed {
@@ -131,13 +129,21 @@
     z-index: 2;
   }
   #section-2 .txtBox {
-    padding: 0 40px;
     right: auto;
-    left: 0;
+    left: 5%;
+  }
+  #section-3 .titleBox {
+    background: #009d95;
+  }
+  #section-3 .titleBox:before {
+    display: none;
   }
   #section-4 .bgBox img {
     width: 40%;
     height: auto;
+  }
+  #section-4 .reservation span {
+    display: block;
   }
   #tabs {
     padding: 0;
@@ -151,11 +157,11 @@
   #tabs a:after {
     display: none;
   }
-  #contBox .contBox {
-    padding-bottom: 50px;
+  #tabs a span {
+    display: block;
   }
-  #contBox .contBox + .contBox {
-    border-top: 1px solid #ccc;
+  #contBox .contBox {
+    padding: 0 20px 50px;
   }
   #contBox .contBox .catBox {
     padding: 20px 0;
@@ -174,7 +180,6 @@
         flex-flow: column;
     -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
-    padding: 0 20px;
   }
   .cookieWrap + .cookieWrap {
     margin-top: 40px;
@@ -257,6 +262,12 @@
     -ms-transform: scale(0.7);
     transform: scale(0.7);
   }
+  #section-3 .titleBox {
+    background: #009d95;
+  }
+  #section-3 .titleBox:before {
+    display: none;
+  }
   #section-3 h3 {
     width: 100%;
     -khtml-transform: scale(0.85);
@@ -272,6 +283,9 @@
     height: 15px;
     left: 0;
   }
+  #tabs a span {
+    display: inline;
+  }
   .cookieWrap {
     display: -ms-flexbox;
     display: flex;
@@ -282,6 +296,8 @@
     -ms-flex-direction: row;
         flex-direction: row;
     padding: 0;
+    width: 100%;
+    height: auto;
   }
   .cookieWrap:nth-child(2n+1) {
     -ms-flex-direction: row-reverse;

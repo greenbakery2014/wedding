@@ -3,37 +3,97 @@
   // outline: 1px solid #000
 /*---------------------------------------------*/
 /*responsive tablet*/
-/*---------------------------------------------*/
-+breakpoint(tablet-vrt)
-  // main box
+/*---------------------------------------------*/     
++breakpoint(tablet)
   .mainContent
-    line-height: 1.6
+    line-height: 2
     font-size: 16px
-    letter-spacing: 0
-    overflow: hidden
-    .wrap 
-      +size(100%)
-      min-width: 0
-      max-width: none
-    .section
-      background-attachment: initial
-      background-size: cover
     h1
       font-size: 30px
     h2
-      font-size: 24px
+      font-size: 20px
     h3
       font-size: 16px
     .txtBox
+      line-height: 2
+    .wrap
       +size(90%)
+  .navBox
+    .logo
+      +size(150px)
+    .nav 
+      margin-top: 8px
+      a
+        padding: 5px 10px
+        font-size: 16px
+  .footerBox .mediaBox
+    font-size: 13px
+  #tabs
+    padding: 5px 0
+    a
+      padding: 10px 10px
+      &:after
+        +size(15px,15px)
   #contBox .contBox
-    width: 95%
-    // background: rgba(#000,.2)
+    .catBox
+      padding-top: 30px
+      margin-bottom: 20px
   .cookieWrap
-    & > div
-      padding: $gutter 0
     .cookie_txt
-      flex: 5.8
-      padding: 0 $gutter * 5
+      flex: 6
+      flex-shrink: auto
+      flex-grow: auto
     .cookie_img
-      flex: 4.2
+      flex: 4
+      flex-shrink: auto
+      flex-grow: auto
+  #section-4 .bgBox img
+    +size(200px)
+
++breakpoint(mac)
+  .mainContent
+    line-height: 1.6
+    font-size: 16px
+    h1
+      font-size: 30px
+    h2
+      font-size: 20px
+    h3
+      font-size: 16px
+    .txtBox
+      line-height: 2
+    .wrap
+      +size(75%)
+  .navBox
+    .logo
+      +size(150px)
+    .nav 
+      margin-top: 8px
+      a
+        padding: 5px 10px
+        font-size: 16px
+  .footerBox .mediaBox
+    font-size: 13px
+  #tabs
+    padding: 5px 0
+    a
+      padding: 10px 10px
+      &:after
+        +size(15px,15px)
+        left: -8px
+  #contBox .contBox
+    .catBox
+      padding-top: 30px
+      margin-bottom: 20px
+  .cookieWrap
+    .cookie_txt
+      flex: 420px
+      flex-shrink: 0
+      flex-grow: 0
+      margin-top: 50px
+    .cookie_img
+      flex: 350px
+      flex-shrink: 0
+      flex-grow: 0
+  #section-4 .bgBox img
+    +size(200px)

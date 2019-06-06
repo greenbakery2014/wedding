@@ -1,49 +1,146 @@
 /*---------------------------------------------*/
 /*responsive tablet*/
 /*---------------------------------------------*/
-@media (min-width: 668px) and (max-width: 768px) {
+@media (min-width: 668px) and (max-width: 1024px) {
   .mainContent {
-    line-height: 1.6;
+    line-height: 2;
     font-size: 16px;
-    letter-spacing: 0;
-    overflow: hidden;
-  }
-  .mainContent .wrap {
-    width: 100%;
-    height: auto;
-    min-width: 0;
-    max-width: none;
-  }
-  .mainContent .section {
-    background-attachment: initial;
-    background-size: cover;
   }
   .mainContent h1 {
     font-size: 30px;
   }
   .mainContent h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
   .mainContent h3 {
     font-size: 16px;
   }
   .mainContent .txtBox {
+    line-height: 2;
+  }
+  .mainContent .wrap {
     width: 90%;
     height: auto;
   }
-  #contBox .contBox {
-    width: 95%;
+  .navBox .logo {
+    width: 150px;
+    height: auto;
   }
-  .cookieWrap > div {
-    padding: 10px 0;
+  .navBox .nav {
+    margin-top: 8px;
+  }
+  .navBox .nav a {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+  .footerBox .mediaBox {
+    font-size: 13px;
+  }
+  #tabs {
+    padding: 5px 0;
+  }
+  #tabs a {
+    padding: 10px 10px;
+  }
+  #tabs a:after {
+    width: 15px;
+    height: 15px;
+  }
+  #contBox .contBox .catBox {
+    padding-top: 30px;
+    margin-bottom: 20px;
   }
   .cookieWrap .cookie_txt {
-    -ms-flex: 5.8;
-        flex: 5.8;
-    padding: 0 50px;
+    -ms-flex: 6;
+        flex: 6;
+    -ms-flex-negative: auto;
+        flex-shrink: auto;
+    -ms-flex-positive: auto;
+        flex-grow: auto;
   }
   .cookieWrap .cookie_img {
-    -ms-flex: 4.2;
-        flex: 4.2;
+    -ms-flex: 4;
+        flex: 4;
+    -ms-flex-negative: auto;
+        flex-shrink: auto;
+    -ms-flex-positive: auto;
+        flex-grow: auto;
+  }
+  #section-4 .bgBox img {
+    width: 200px;
+    height: auto;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1440px) {
+  .mainContent {
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  .mainContent h1 {
+    font-size: 30px;
+  }
+  .mainContent h2 {
+    font-size: 20px;
+  }
+  .mainContent h3 {
+    font-size: 16px;
+  }
+  .mainContent .txtBox {
+    line-height: 2;
+  }
+  .mainContent .wrap {
+    width: 75%;
+    height: auto;
+  }
+  .navBox .logo {
+    width: 150px;
+    height: auto;
+  }
+  .navBox .nav {
+    margin-top: 8px;
+  }
+  .navBox .nav a {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+  .footerBox .mediaBox {
+    font-size: 13px;
+  }
+  #tabs {
+    padding: 5px 0;
+  }
+  #tabs a {
+    padding: 10px 10px;
+  }
+  #tabs a:after {
+    width: 15px;
+    height: 15px;
+    left: -8px;
+  }
+  #contBox .contBox .catBox {
+    padding-top: 30px;
+    margin-bottom: 20px;
+  }
+  .cookieWrap .cookie_txt {
+    -ms-flex: 420px;
+        flex: 420px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-positive: 0;
+        flex-grow: 0;
+    margin-top: 50px;
+  }
+  .cookieWrap .cookie_img {
+    -ms-flex: 350px;
+        flex: 350px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-positive: 0;
+        flex-grow: 0;
+  }
+  #section-4 .bgBox img {
+    width: 200px;
+    height: auto;
   }
 }

@@ -13,7 +13,7 @@
 }
 
 .navBox .logo {
-  width: 15%;
+  width: 200px;
   height: auto;
   margin: 0 0 0 10px;
   float: left;
@@ -35,7 +35,7 @@
   text-align: center;
   padding: 10px 20px;
   color: #333;
-  font-size: 18px;
+  font-size: 17px;
   position: relative;
   transition: all 0.1s linear;
 }
