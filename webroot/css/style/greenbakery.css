@@ -1,0 +1,347 @@
+/*---------------------------------------------*/
+/*greenbakery*/
+/*---------------------------------------------*/
+.mainContent {
+  line-height: 2;
+  font-size: 19px;
+}
+
+.mainContent a {
+  display: inline-block;
+}
+
+.mainContent h1 {
+  font-size: 36px;
+}
+
+.mainContent h2 {
+  font-size: 25px;
+}
+
+.mainContent h3 {
+  font-size: 19px;
+}
+
+.mainContent .wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mainContent .wrap:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.mainContent .section {
+  position: relative;
+  z-index: 1;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainContent .section > .wrap {
+  min-height: 100vh;
+}
+
+.mainContent .txtBox {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+}
+
+.mainContent .btn {
+  display: inline-block;
+  padding: 10px 60px;
+  background: #009d95;
+  color: #fff;
+  transition: all 0.1s linear;
+}
+
+.mainContent .btn:hover {
+  background: rgba(0, 157, 149, 0.8);
+}
+
+#section-1 {
+  background-image: url("../../images/chuttersnap-179159-unsplash.jpg");
+}
+
+#section-1 .txtBox {
+  left: 5%;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+#section-1 .wrap {
+  z-index: 3;
+}
+
+#section-2 {
+  background-image: url("../../images/jordan-arnold-612264-unsplash.jpg");
+}
+
+#section-2:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+#section-2 .wrap {
+  z-index: 3;
+}
+
+#section-2 .txtBox {
+  right: 5%;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+#section-3 .titleBox {
+  padding: 20px 0 100px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 9;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../images/jordan-arnold-612264-unsplash.jpg");
+  transition: all 0.2s linear;
+}
+
+#section-3 .titleBox:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 157, 149, 0.95);
+}
+
+#section-3 .titleBox h2, #section-3 .titleBox h3 {
+  margin: 0 auto;
+  width: 90%;
+}
+
+#section-3 .titleBox h3 {
+  padding-bottom: 10px;
+}
+
+#tabs {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  z-index: 9;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#tabs a {
+  padding: 10px 20px;
+  margin: 0 10px;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  transition: all 0.1s linear;
+}
+
+#tabs a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+  left: -5px;
+  width: 20px;
+  height: 20px;
+  background: url("../../images/icon_dec.png") no-repeat center center;
+  background-size: 100% auto;
+  opacity: 0;
+  transition: all 0.1s linear;
+}
+
+#tabs a:hover {
+  color: white;
+}
+
+#tabs a.active {
+  color: white;
+}
+
+#tabs a.active:after {
+  opacity: 1;
+}
+
+#tabs.fixed {
+  position: fixed;
+  left: 0;
+  background: #009d95;
+}
+
+#contBox .contBox {
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+#contBox .contBox + .contBox {
+  border-top: 1px solid #ccc;
+}
+
+#contBox .contBox .catBox {
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+}
+
+#contBox .contBox .catBox h2 {
+  color: #009d95;
+}
+
+#contBox .contBox .catBox h3 span {
+  display: block;
+}
+
+#contBox .contBox .catBox:after {
+  content: "";
+  display: block;
+  background: url("../../images/tabs_dec.png") no-repeat center center;
+  background-size: auto 100%;
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+  bottom: -20px;
+}
+
+.contWrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 0 auto;
+}
+
+.contWrap > div img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+.contWrap:nth-child(2n+1) {
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+}
+
+.contWrap .cont_txt {
+  -ms-flex: 600px;
+      flex: 600px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.contWrap .cont_txt ._title {
+  font-size: 20px;
+  color: #009d95;
+}
+
+.contWrap .cont_img {
+  -ms-flex: 420px;
+      flex: 420px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
+.contWrap .cont_img img {
+  margin: 0 auto;
+}
+
+#section-4 .wrap {
+  min-height: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+#section-4 .bgBox {
+  min-height: 30vh;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../images/GreenBakery_Hero_2880x2304.jpg");
+  z-index: 1;
+}
+
+#section-4 .bgBox:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+#section-4 .bgBox img {
+  width: 15%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+#section-4 .reservation {
+  text-align: center;
+  padding: 5% 0;
+  width: 100%;
+  height: auto;
+}
+
+#section-4 .reservation h2 {
+  color: #009d95;
+}
+
+#section-4 .reservation p {
+  margin: 10px auto 30px;
+}

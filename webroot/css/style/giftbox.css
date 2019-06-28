@@ -1,0 +1,14 @@
+/*---------------------------------------------*/
+/*giftbox*/
+/*---------------------------------------------*/
+.contentBox#giftbox #section-1 {
+  background-image: url("../../images/photo1.jpg");
+}
+
+.contentBox#giftbox #section-2 {
+  background-image: url("../../images/photo2.jpg");
+}
+
+.contentBox#giftbox #section-3 .titleBox {
+  background-image: url("../../images/photo2.jpg");
+}

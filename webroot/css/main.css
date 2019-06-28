@@ -1,2 +1,3 @@
 @import url(main/base.css);
-@import url(main/hack.css);
+@import url(style/nav.css);
+@import url(style/footer.css);

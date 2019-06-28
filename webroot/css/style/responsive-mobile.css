@@ -175,26 +175,26 @@
   #contBox .contBox .catBox h3 span {
     display: inline;
   }
-  .cookieWrap {
+  .contWrap {
     -ms-flex-flow: column;
         flex-flow: column;
     -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
   }
-  .cookieWrap + .cookieWrap {
+  .contWrap + .contWrap {
     margin-top: 40px;
   }
-  .cookieWrap:nth-child(2n+1) {
+  .contWrap:nth-child(2n+1) {
     -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
   }
-  .cookieWrap .cookie_txt {
+  .contWrap .cont_txt {
     -ms-flex: 12;
         flex: 12;
     padding: 0;
     text-align: center;
   }
-  .cookieWrap .cookie_img {
+  .contWrap .cont_img {
     -ms-flex: 12;
         flex: 12;
     width: 70%;
@@ -286,7 +286,7 @@
   #tabs a span {
     display: inline;
   }
-  .cookieWrap {
+  .contWrap {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -299,21 +299,21 @@
     width: 100%;
     height: auto;
   }
-  .cookieWrap:nth-child(2n+1) {
+  .contWrap:nth-child(2n+1) {
     -ms-flex-direction: row-reverse;
         flex-direction: row-reverse;
   }
-  .cookieWrap .cookie_txt {
+  .contWrap .cont_txt {
     -ms-flex: 6;
         flex: 6;
     padding: 0;
     text-align: left;
   }
-  .cookieWrap .cookie_img {
+  .contWrap .cont_img {
     -ms-flex: 6;
         flex: 6;
   }
-  .cookieWrap .cookie_img img {
+  .contWrap .cont_img img {
     margin: 0 auto;
     width: 100%;
   }
