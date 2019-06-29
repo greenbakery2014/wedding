@@ -1,26 +1,19 @@
 $(function () {
   var methods = {
-    handleNavFixed: function () {
-      var scroll = $(window).scrollTop();
-      var scrollNav = $("#nav").innerHeight();
-      var scrollTarget = scroll >= $("#section-2").offset().top - scrollNav
-  
-      if (scrollTarget) {
-        $("#nav").addClass("fixed");
-      } else {
-        $("#nav").removeClass("fixed");
-      };
-    },
     handleTabsFixed: function () {
       var scroll = $(window).scrollTop();
-      var scroll_area = $("#section-1").innerHeight() + $("#section-2").innerHeight();
       var scroll_nav = $("#nav").innerHeight();
       var scroll_tabs = $("#tabs").innerHeight();
-      var scroll_s3Title = $("#section-3 .titleBox").height() - scroll_nav;
-      var scroll_s4Top = $("#section-4").offset().top;
+
+      var section01 = $("#section-1").innerHeight();
+      var section02 = $("#section-2").length;
+      var section03 = $("#section-3 .titleBox").height() - scroll_nav;
+      var section04 = $("#section-4").offset().top;
+      var scroll_area = section01 + $("#section-2").innerHeight();
+      
   
       // situation name 1
-      var situationName1 = scroll >= scroll_area + scroll_s3Title
+      var situationName1 = scroll >= scroll_area + section03;
       if (situationName1) {
         $("#tabs")
           .addClass("fixed")
@@ -33,7 +26,7 @@ $(function () {
       };
   
       // situation name 2
-      var situationName2 = scroll >= scroll_s4Top - scroll_nav - scroll_tabs
+      var situationName2 = scroll >= section04 - scroll_nav  //  - scroll_tabs
       if (situationName2) {
         $("#tabs").removeClass("fixed")
       };
@@ -48,23 +41,7 @@ $(function () {
         return false;
       }
     },
-    handleClickTabs: function (event) {
-      // event.preventDefault();
-  
-      // $('#tabs a').removeClass('active');
-      // $(this).addClass('active');
-      // $('.contBox').hide();
-      // $($(this).attr('href')).fadeIn(300);
 
-      // var tabTarget = $(this.getAttribute('href'));
-      // var anchorSpace = $("#nav").innerHeight() + $("#tabs").innerHeight();
-      // if (tabTarget.length) {
-      //   $('html, body').stop().animate({
-      //     scrollTop: $("#contBox").offset().top - anchorSpace
-      //   }, 500);
-      //   return false;
-      // }
-    },
     handleTabScroll: function (event) {
       var anchorSpace = $("#nav").innerHeight() + $("#tabs").innerHeight();
       //smoothscroll
@@ -88,14 +65,12 @@ $(function () {
           $('#tabs a').removeClass("active");
           currLink.addClass("active");
         }
-        
       });
     }
   }
 
   var init = function () {
     $(window).on('scroll', function () {
-      // methods.handleNavFixed()
       methods.handleTabsFixed()
       methods.handleTabScroll()
     });
