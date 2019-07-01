@@ -7,6 +7,8 @@
 .contentBox#giftbox
 	#section-1
 		background-image: url('../../images/photo1.jpg')
+	#section-2
+		background-image: url('../../images/photo2.jpg')
 	#section-3
 		.titleBox
 			padding: 0
@@ -14,8 +16,7 @@
 			background: rgba($mainColor,1)
 			bottom: auto
 		.infoBox
-			min-height: 50vh
-			padding: 20px 0
+			height: 50vh
 			background-attachment: fixed
 			background-position: center center
 			background-repeat: no-repeat
@@ -24,23 +25,18 @@
 			text-align: center
 			color: #fff
 			+beforeCover(0.3)
-			.wrap
+			.txtBox
 				z-index: 2
+				+centeralign
 		#tabs-1 .infoBox
-			background-image: url("../../images/photo4.jpg")
+			background-image: url("../../images/bag01.jpg")
 		#tabs-2 .infoBox
-			background-image: url("../../images/photo5.jpg")
+			background-image: url("../../images/photo3.jpg")
 		.cont_gallery
-			margin: 30px auto
-			display: flex
-			flex-wrap: wrap
-			justify-content: space-start
+			padding: 30px 0
+			text-align: center
 			img
-				display: flex
-				width: calc(100% / 3 - 2%)
-				margin: 1%
 				height: auto
-			&#box img
+				margin: 1%
+				margin-bottom: 0
 				width: calc(100% / 4 - 2%)
-			&#ribbon img
-				width: calc(100% / 6 - 2%)
