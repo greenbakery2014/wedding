@@ -68,3 +68,7 @@
   margin-bottom: 0;
   width: calc(100% / 4 - 2%);
 }
+
+.contentBox#giftbox #contBox .contBox + .contBox {
+  border-top: 0;
+}

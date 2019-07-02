@@ -91,8 +91,19 @@
   #section-4
     .bgBox img
       +size(40%)
-    .reservation span
-      display: block
+    .reservation
+      flex-direction: column
+      .column 
+        padding: 0 20px
+        & + .column
+          margin-top: 50px
+          padding-top: 50px
+          &:before
+            +size(80%, 1px)
+            top: -1px
+            +halign
+      span
+        display: block
   #tabs
     padding: 0
     a
@@ -130,7 +141,22 @@
       flex: 12
       +size(70%)
       margin: 0 auto
-
+  // giftbox
+  .contentBox#giftbox
+    #section-3
+      .infoBox
+        background-attachment: initial
+        background-size: cover
+        .txtBox
+          width: 100%
+      .cont_gallery 
+        padding: 30px 20px
+        img
+          width: calc(100% / 2 - 2%)
+    #contBox .contBox
+      padding: 0
+      .catBox
+        padding: 20px 20px
 
 +breakpoint(iphone-hrz)
   // main box

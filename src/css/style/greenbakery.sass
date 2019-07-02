@@ -193,11 +193,37 @@
       left: 50%
       transform: translate(-50%, -50%)
       z-index: 2
-  .reservation
+  .titleBox
+    position: relative
     text-align: center
-    padding: 5% 0
-    +size(100%)
+    padding: 30px 0
     h2
       color: $mainColor
+      font-size: 22px
+    &:after
+      content: ""
+      display: block
+      background: url("../../images/tabs_dec.png") no-repeat center center
+      background-size: auto 100%
+      +size(100%,40px)
+      +halign
+      bottom: -20px
+  .reservation
+    display: flex
+    flex-direction: row
+    justify-content: center
+    margin: 50px auto
+    .column
+      padding: 0 40px
+      text-align: center
+      position: relative
+      & + .column:before
+        content: ""
+        display: block
+        +size(1px, 80%)
+        background: #ccc
+        +valign
+        left: -1px
     p
-      margin: 10px auto 30px
+      margin-bottom: 30px
+      

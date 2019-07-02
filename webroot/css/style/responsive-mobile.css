@@ -142,6 +142,26 @@
     width: 40%;
     height: auto;
   }
+  #section-4 .reservation {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  #section-4 .reservation .column {
+    padding: 0 20px;
+  }
+  #section-4 .reservation .column + .column {
+    margin-top: 50px;
+    padding-top: 50px;
+  }
+  #section-4 .reservation .column + .column:before {
+    width: 80%;
+    height: 1px;
+    top: -1px;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+  }
   #section-4 .reservation span {
     display: block;
   }
@@ -200,6 +220,25 @@
     width: 70%;
     height: auto;
     margin: 0 auto;
+  }
+  .contentBox#giftbox #section-3 .infoBox {
+    background-attachment: initial;
+    background-size: cover;
+  }
+  .contentBox#giftbox #section-3 .infoBox .txtBox {
+    width: 100%;
+  }
+  .contentBox#giftbox #section-3 .cont_gallery {
+    padding: 30px 20px;
+  }
+  .contentBox#giftbox #section-3 .cont_gallery img {
+    width: calc(100% / 2 - 2%);
+  }
+  .contentBox#giftbox #contBox .contBox {
+    padding: 0;
+  }
+  .contentBox#giftbox #contBox .contBox .catBox {
+    padding: 20px 20px;
   }
 }
 
