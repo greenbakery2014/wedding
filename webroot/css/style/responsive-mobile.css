@@ -232,6 +232,10 @@
   .contentBox#giftbox #section-3 .infoBox .txtBox span {
     display: block;
   }
+  .contentBox#giftbox #section-3 .infoBox#bag {
+    background-size: auto 25vh;
+    height: 25vh;
+  }
   .contentBox#giftbox #section-3 #green_box li {
     width: calc(100% / 1.5);
   }
