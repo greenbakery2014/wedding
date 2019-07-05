@@ -1,6 +1,6 @@
 @import '../mixins'
 *
-  // outline: 1px solid #000
+//   outline: 1px solid #000
 /*---------------------------------------------*/
 /*giftbox*/
 /*---------------------------------------------*/
@@ -24,21 +24,51 @@
 			position: relative
 			text-align: center
 			color: #fff
-			+beforeCover(0.3)
+			+beforeCover(0.5)
 			.txtBox
 				z-index: 2
 				+centeralign
+				width: 100%
+			.catBox span
+				display: block
 		#tabs-1 .infoBox
 			background-image: url("../../images/bag01.jpg")
 		#tabs-2 .infoBox
 			background-image: url("../../images/photo3.jpg")
 		.cont_gallery
 			padding: 30px 0
+			margin: 0 auto
 			text-align: center
-			img
-				height: auto
-				margin: 1%
-				margin-bottom: 0
-				width: calc(100% / 4 - 2%)
+			font-size: 0
+			+clearfix
+			li
+				display: inline-block
+				width: calc(100% / 4)
+				font-size: 16px
+				position: relative
+				vertical-align: bottom
+				z-index: 1
+				padding: 1%
+				+text-shadow(0,2px, 3px,rgba(#000, 0.6))
+				img
+					+size(100%, auto)
+					display: block
+				span
+					display: inline-block
+					position: absolute
+					bottom: 0
+					right: 0
+					z-index: 2
+					text-align: right
+					margin: 15px 20px
+		#green_box li
+			text-shadow: none
+		#moon_box li
+			width: calc(100% / 3)
+		#moon_circle li
+			width: calc(100% / 5)
+			color: #fff
+		#moon_cake li
+			color: #fff
 	#contBox .contBox + .contBox
-    border-top: 0
+    	border-top: 0

@@ -148,6 +148,7 @@
   }
   #section-4 .reservation .column {
     padding: 0 20px;
+    width: auto;
   }
   #section-4 .reservation .column + .column {
     margin-top: 50px;
@@ -226,13 +227,34 @@
     background-size: cover;
   }
   .contentBox#giftbox #section-3 .infoBox .txtBox {
-    width: 100%;
+    width: 85%;
   }
-  .contentBox#giftbox #section-3 .cont_gallery {
-    padding: 30px 20px;
+  .contentBox#giftbox #section-3 .infoBox .txtBox span {
+    display: block;
   }
-  .contentBox#giftbox #section-3 .cont_gallery img {
-    width: calc(100% / 2 - 2%);
+  .contentBox#giftbox #section-3 #green_box li {
+    width: calc(100% / 1.5);
+  }
+  .contentBox#giftbox #section-3 #green_ribbon li {
+    width: calc(100% / 2.5);
+  }
+  .contentBox#giftbox #section-3 #green_bag li {
+    width: calc(100% / 1.5);
+  }
+  .contentBox#giftbox #section-3 #green_cstm li {
+    width: calc(100% / 2.5);
+  }
+  .contentBox#giftbox #section-3 #moon_box li {
+    width: calc(100% / 1.5);
+  }
+  .contentBox#giftbox #section-3 #moon_circle li {
+    width: calc(100% / 2.5);
+  }
+  .contentBox#giftbox #section-3 #moon_cake li {
+    width: calc(100% / 1.5);
+  }
+  .contentBox#giftbox #section-3 #moon_cstm li {
+    width: calc(100% / 2.5);
   }
   .contentBox#giftbox #contBox .contBox {
     padding: 0;

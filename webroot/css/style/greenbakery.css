@@ -367,9 +367,11 @@
 }
 
 #section-4 .reservation .column {
-  padding: 0 40px;
+  padding: 0 20px;
   text-align: center;
   position: relative;
+  width: 50%;
+  height: auto;
 }
 
 #section-4 .reservation .column + .column:before {
@@ -387,4 +389,8 @@
 
 #section-4 .reservation p {
   margin-bottom: 30px;
+}
+
+#section-4 .reservation em {
+  color: #009d95;
 }

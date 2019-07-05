@@ -47,11 +47,30 @@
       flex: 4
       flex-shrink: auto
       flex-grow: auto
-  #section-4 .bgBox img
-    +size(200px)
+  #section-4 
+    .bgBox img
+      +size(200px)
+    .reservation p
+      min-height: 220px
   .contentBox#giftbox
-    #section-3 .cont_gallery img
-      width: calc(100% / 3 - 2%)
+    #section-3 
+      #green_box li
+        width: calc(100% / 2.5)
+      #green_ribbon li
+        width: calc(100% / 3.5)
+      #green_bag li
+        width: calc(100% / 2.5)
+      #green_cstm li
+        width: calc(100% / 3)
+      #moon_box li
+        width: calc(100% / 2.5)
+      #moon_circle li
+        width: calc(100% / 3)
+      #moon_cake li
+        width: calc(100% / 2.5)
+      #moon_cstm li
+        width: calc(100% / 3)
+
 
 
 +breakpoint(mac)
@@ -101,3 +120,10 @@
       flex-grow: 0
   #section-4 .bgBox img
     +size(200px)
+  .contentBox#giftbox
+    #section-3 
+      .cont_gallery li 
+        font-size: 15px
+      #green_box li span
+          margin: 0
+

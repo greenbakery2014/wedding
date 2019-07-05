@@ -70,8 +70,32 @@
     width: 200px;
     height: auto;
   }
-  .contentBox#giftbox #section-3 .cont_gallery img {
-    width: calc(100% / 3 - 2%);
+  #section-4 .reservation p {
+    min-height: 220px;
+  }
+  .contentBox#giftbox #section-3 #green_box li {
+    width: calc(100% / 2.5);
+  }
+  .contentBox#giftbox #section-3 #green_ribbon li {
+    width: calc(100% / 3.5);
+  }
+  .contentBox#giftbox #section-3 #green_bag li {
+    width: calc(100% / 2.5);
+  }
+  .contentBox#giftbox #section-3 #green_cstm li {
+    width: calc(100% / 3);
+  }
+  .contentBox#giftbox #section-3 #moon_box li {
+    width: calc(100% / 2.5);
+  }
+  .contentBox#giftbox #section-3 #moon_circle li {
+    width: calc(100% / 3);
+  }
+  .contentBox#giftbox #section-3 #moon_cake li {
+    width: calc(100% / 2.5);
+  }
+  .contentBox#giftbox #section-3 #moon_cstm li {
+    width: calc(100% / 3);
   }
 }
 
@@ -145,5 +169,11 @@
   #section-4 .bgBox img {
     width: 200px;
     height: auto;
+  }
+  .contentBox#giftbox #section-3 .cont_gallery li {
+    font-size: 15px;
+  }
+  .contentBox#giftbox #section-3 #green_box li span {
+    margin: 0;
   }
 }
