@@ -203,21 +203,21 @@
   border-top: 1px solid #ccc;
 }
 
-#contBox .contBox .catBox {
+#contBox .catBox {
   padding: 40px 0;
   text-align: center;
   position: relative;
 }
 
-#contBox .contBox .catBox h2 {
+#contBox .catBox h2 {
   color: #009d95;
 }
 
-#contBox .contBox .catBox h3 span {
+#contBox .catBox h3 span {
   display: block;
 }
 
-#contBox .contBox .catBox:after {
+#contBox .catBox:after {
   content: "";
   display: block;
   background: url("../../images/tabs_dec.png") no-repeat center center;

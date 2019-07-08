@@ -1,0 +1,25 @@
+@import '../mixins'
+*
+  // outline: 1px solid #000
+/*---------------------------------------------*/
+/*catering*/
+/*---------------------------------------------*/
+.contentBox#catering
+	#section-1
+		background-image: url('../../images/photo4.jpg')
+		+beforeCover(0.4)
+	#section-2
+		background-image: url('../../images/photo5.jpg')
+	#section-3
+		.catBox
+			margin-bottom: 50px
+		.contWrap 
+			width: 90%
+			margin-bottom: 30px
+			.cont_txt
+				flex: 5
+				text-align: center
+			.cont_img
+				flex: 7
+				img
+					max-width: none

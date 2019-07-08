@@ -1,0 +1,46 @@
+/*---------------------------------------------*/
+/*catering*/
+/*---------------------------------------------*/
+.contentBox#catering #section-1 {
+  background-image: url("../../images/photo4.jpg");
+}
+
+.contentBox#catering #section-1:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.contentBox#catering #section-2 {
+  background-image: url("../../images/photo5.jpg");
+}
+
+.contentBox#catering #section-3 .catBox {
+  margin-bottom: 50px;
+}
+
+.contentBox#catering #section-3 .contWrap {
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+.contentBox#catering #section-3 .contWrap .cont_txt {
+  -ms-flex: 5;
+      flex: 5;
+  text-align: center;
+}
+
+.contentBox#catering #section-3 .contWrap .cont_img {
+  -ms-flex: 7;
+      flex: 7;
+}
+
+.contentBox#catering #section-3 .contWrap .cont_img img {
+  max-width: none;
+}
