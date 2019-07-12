@@ -95,7 +95,7 @@
       flex-direction: column
       .column 
         padding: 0 20px
-        width: auto
+        width: calc(100% - 40px)
         & + .column
           margin-top: 50px
           padding-top: 50px
@@ -175,6 +175,36 @@
       padding: 0
       .catBox
         padding: 20px 20px
+  // catering
+  .contentBox#catering
+    #section-3
+      .catBox
+        margin-bottom: 50px
+      .contWrap 
+        width: 100%
+        flex-flow: column-reverse
+        font-size: 16px
+        & + .contWrap 
+          &:before
+            +size(90%, 1px)
+        &:nth-child(2n+1) .cont_img img
+          margin: 0 auto
+        .cont_txt
+          text-align: center
+          margin-top: 30px
+        .cont_img
+          width: 80%
+          img
+            width: 100%
+            margin: 0 auto
+        ._desc
+          padding: 0 20px
+        span
+          font-size: 16px
+          white-space: normal
+
+
+
 
 +breakpoint(iphone-hrz)
   // main box
@@ -258,8 +288,38 @@
       min-height: 200px
       img
         +size(20%)
-    .reservation p
-      +size(100%)
-      +scale(0.8)
-      line-height: 2
-      margin: 10px auto
+    .reservation 
+      flex-direction: row
+      margin: 50px auto
+      &.wrap
+        width: 100%
+      .column
+        p
+          min-height: 250px
+        & + .column
+          margin-top: 0px
+          padding-top: 0px
+          &:before
+            +size(1px, 80%)
+            +valign
+            left: -1px
+  .contentBox#catering
+    #section-3
+      .contWrap 
+        flex-flow: row
+        width: 100%
+        & + .contWrap 
+          &:before
+            +size(100%, 1px)
+        &:nth-child(2n+1)
+          flex-flow: row-reverse
+        .cont_txt
+          flex: 6
+          text-align: left
+          margin-top: 0
+        .cont_img
+          flex: 6
+          width: auto
+        ._title
+          padding-left: 20px
+

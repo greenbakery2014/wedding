@@ -97,6 +97,30 @@
   .contentBox#giftbox #section-3 #moon_cstm li {
     width: calc(100% / 3);
   }
+  .contentBox#catering #section-3 .catBox {
+    margin-bottom: 70px;
+  }
+  .contentBox#catering #section-3 .contWrap {
+    width: 90%;
+  }
+  .contentBox#catering #section-3 .contWrap + .contWrap:before {
+    width: 100%;
+    height: 1px;
+  }
+  .contentBox#catering #section-3 .contWrap .cont_txt {
+    -ms-flex: 5;
+        flex: 5;
+  }
+  .contentBox#catering #section-3 .contWrap .cont_img {
+    -ms-flex: 7;
+        flex: 7;
+  }
+  .contentBox#catering #section-3 .contWrap .cont_img img {
+    max-width: 300px;
+  }
+  .contentBox#catering #section-3 .contWrap span {
+    white-space: normal;
+  }
 }
 
 @media (min-width: 900px) and (max-width: 1440px) {

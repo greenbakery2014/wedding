@@ -70,7 +70,22 @@
         width: calc(100% / 2.5)
       #moon_cstm li
         width: calc(100% / 3)
-
+  .contentBox#catering
+    #section-3
+      .catBox
+        margin-bottom: 70px
+      .contWrap 
+        width: 90%
+        & + .contWrap:before
+          +size(100%, 1px)
+        .cont_txt
+          flex: 5
+        .cont_img
+          flex: 7
+          img
+            max-width: 300px
+        span
+          white-space: normal
 
 
 +breakpoint(mac)
@@ -126,4 +141,3 @@
         font-size: 15px
       #green_box li span
           margin: 0
-

@@ -148,7 +148,7 @@
   }
   #section-4 .reservation .column {
     padding: 0 20px;
-    width: auto;
+    width: calc(100% - 40px);
   }
   #section-4 .reservation .column + .column {
     margin-top: 50px;
@@ -265,6 +265,40 @@
   }
   .contentBox#giftbox #contBox .contBox .catBox {
     padding: 20px 20px;
+  }
+  .contentBox#catering #section-3 .catBox {
+    margin-bottom: 50px;
+  }
+  .contentBox#catering #section-3 .contWrap {
+    width: 100%;
+    -ms-flex-flow: column-reverse;
+        flex-flow: column-reverse;
+    font-size: 16px;
+  }
+  .contentBox#catering #section-3 .contWrap + .contWrap:before {
+    width: 90%;
+    height: 1px;
+  }
+  .contentBox#catering #section-3 .contWrap:nth-child(2n+1) .cont_img img {
+    margin: 0 auto;
+  }
+  .contentBox#catering #section-3 .contWrap .cont_txt {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .contentBox#catering #section-3 .contWrap .cont_img {
+    width: 80%;
+  }
+  .contentBox#catering #section-3 .contWrap .cont_img img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contentBox#catering #section-3 .contWrap ._desc {
+    padding: 0 20px;
+  }
+  .contentBox#catering #section-3 .contWrap span {
+    font-size: 16px;
+    white-space: normal;
   }
 }
 
@@ -389,13 +423,55 @@
     width: 20%;
     height: auto;
   }
-  #section-4 .reservation p {
+  #section-4 .reservation {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    margin: 50px auto;
+  }
+  #section-4 .reservation.wrap {
     width: 100%;
-    height: auto;
-    -khtml-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
-    line-height: 2;
-    margin: 10px auto;
+  }
+  #section-4 .reservation .column p {
+    min-height: 250px;
+  }
+  #section-4 .reservation .column + .column {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  #section-4 .reservation .column + .column:before {
+    width: 1px;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    left: -1px;
+  }
+  .contentBox#catering #section-3 .contWrap {
+    -ms-flex-flow: row;
+        flex-flow: row;
+    width: 100%;
+  }
+  .contentBox#catering #section-3 .contWrap + .contWrap:before {
+    width: 100%;
+    height: 1px;
+  }
+  .contentBox#catering #section-3 .contWrap:nth-child(2n+1) {
+    -ms-flex-flow: row-reverse;
+        flex-flow: row-reverse;
+  }
+  .contentBox#catering #section-3 .contWrap .cont_txt {
+    -ms-flex: 6;
+        flex: 6;
+    text-align: left;
+    margin-top: 0;
+  }
+  .contentBox#catering #section-3 .contWrap .cont_img {
+    -ms-flex: 6;
+        flex: 6;
+    width: auto;
+  }
+  .contentBox#catering #section-3 .contWrap ._title {
+    padding-left: 20px;
   }
 }
